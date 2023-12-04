@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/navbar.css">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link rel="icon" href="/static/images/fevicon.png" type="image/gif" />
+
+</head>
+
+<body>
+    <section id="header">
+        <img src="static/img/logo3.jpg" alt="">
+
+        <div class="nav">
+            <ul id="navbar">
+                <li><a class="active" href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'details' %}">Details</a></li>
+                <li><a href="about.html">Reminder</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>

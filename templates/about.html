@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/about.css">
+    <link rel="stylesheet" href="/static/css/Therepyabout.css">
+
+
+    <!-- Bootstrap main link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Bootstrap icon CDN for icon applying -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>About</title>
+
+    <style>
+        #header {
+            margin-bottom: 50px;
+        }
+
+        .about {
+            margin-bottom: 170px;
+        }
+    </style>
+
+    <!-- navbar css -->
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .logoo img {
+            height: 80px;
+            width: 240px;
+            margin-left: 80px;
+        }
+
+        .items {
+            display: flex;
+            gap: 50px;
+            margin-top: 30px;
+            /* margin-right: 200px; */
+            margin-left: 250px;
+        }
+
+        .items li {
+            list-style: none;
+            position: relative;
+
+        }
+
+        .items a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: 700;
+            position: relative;
+
+        }
+
+        .items li a:hover {
+            color: #088178;
+            /* background-color: #FFF; */
+        }
+
+        .items li a:hover::after {
+            content: '';
+            /* Add content to the pseudo-element */
+            position: absolute;
+            /* Position the pseudo-element absolutely */
+            width: 50%;
+            /* Set the width to 50% (covering half of the word) */
+            height: 2px;
+            /* Set the height to create a horizontal line */
+            background-color: #000000;
+            /* Color of the underline */
+            bottom: 0;
+            /* Position it at the bottom of the link */
+            left: 0;
+            /* Start from the left */
+            transition: width 0.3s;
+            /* Add a smooth transition effect */
+        }
+
+        .items li a:hover {
+            color: #000000;
+            /* Change the text color to red on hover */
+            /* You can add more styles as needed */
+        }
+
+        .items li a:active {
+            color: #000000;
+            /* Change the text color to green when clicked */
+            /* You can add more styles as needed */
+        }
+
+        .nav-1 {
+            margin-left: 600px;
+            margin-top: 25px;
+            font-size: 20px;
+            display: flex;
+        }
+
+        .nav-1 li {
+            margin-left: 35px;
+        }
+
+        .wrapper1 {
+            background-color: #5eaba3;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="sec1">
+
+        <div>
+            <nav>
+                <div class="logoo d-flex">
+                    <img src="/static/img/logo23.png" class="img-fluid">
+
+                    <ul class="nav-1">
+                        <li><i class="bi bi-envelope-at-fill"></i>&nbsp;D5element@gmail.com</li>
+                        <li><i class="bi bi-telephone-fill"></i>&nbsp;91+ 896452345</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <nav class="wrapper1 container-fluid d-flex justify-content-between">
+            <!-- <div class="logoo">
+                <img src="/static/img/logo10.png" class="img-fluid">
+            </div> -->
+
+            <div class="list">
+                <ul class="items">
+                    <li><a href="{% url 'home' %}">HOME</a></li>
+                    <li><a href="{% url 'about' %}">ABOUT US</a></li>
+                    <li><a href="{% url 'details' %}">DETAILS</a></li>
+                    <li><a href="{% url 'catalog' %}">PATIENT SEARCH</a></li>
+                    <li><a href="{% url 'reminder' %}">REMINDER</a></li>
+                    <li><a href="{% url 'contact' %}">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+
+    <div class="heading" style="margin-top: 50px;">
+        <h1>About Us</h1><br>
+        <p>Coffee is a beloved beverage enjoyed by millions worldwide for its bold flavor, rich aroma, and comforting
+            warmth </p>
+    </div>
+
+    <div class="container">
+        <section class="about">
+
+            <div class="about-image">
+                <img src="/static/img/about.jpg" alt="">
+            </div>
+
+            <div class="about-content">
+                <h2>Medical therepies clinic</h2>
+                <p>Medical content is becoming increasingly available electronically in a variety of forms ranging from
+                    patient records and medical dossiers, scientific publications and health-related websites to
+                    medical-related topics shared across social networks.The authors discuss five key common factors:
+                    the therapeutic relationship, motivation, corrective experiencing, insight, and self‑efficacy, which
+                    serve as heuristics for therapists of any background.
+                </p>
+                <!-- <a href="" class="read-more">Read More</a> -->
+            </div>
+        </section>
+    </div>
+
+
+    <div class="container-th">
+
+        <h1 class="heading">All Therepies</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="/static/img/massage.jpg" alt="">
+                <h3>Massage Therepy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+                <!-- <a href="#" class="btn">read more</a> -->
+            </div>
+
+            <div class="box">
+                <img src="/static/img/mud12.jpg">
+                <h3>Mud Therepy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+                <!-- <a href="#" class="btn">read more</a> -->
+            </div>
+
+            <div class="box">
+                <img src="/static/img/steam.jpg" alt="">
+                <h3>Steam Therepy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+                <!-- <a href="#" class="btn">read more</a> -->
+            </div>
+
+            <div class="box">
+                <img src="/static/img/Leech.jpeg" alt="">
+                <h3>Leech Therepy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+                <!-- <a href="#" class="btn">read more</a> -->
+            </div>
+
+            <div class="box">
+                <img src="/static/img/Cupping.jpg" alt="">
+                <h3>Cupping Therepy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+                <!-- <a href="#" class="btn">read more</a> -->
+            </div>
+
+            <div class="box">
+                <img src="/static/img/colon.jpg" alt="">
+                <h3>Colon Therepy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+                <!-- <a href="#" class="btn">read more</a> -->
+            </div>
+
+            <div class="box">
+                <img src="/static/img/hydro.jpg" alt="">
+                <h3>Hydro Therepy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+                <!-- <a href="#" class="btn">read more</a> -->
+            </div>
+
+            <div class="box">
+                <img src="/static/img/waterjet.jpg" alt="">
+                <h3>Water Jet Therepy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+                <!-- <a href="#" class="btn">read more</a> -->
+            </div>
+
+            <div class="box two">
+                <img src="/static/img/diet.webp" alt="">
+                <h3>Diet Therepy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+                <!-- <a href="#" class="btn">read more</a> -->
+            </div>
+
+            <div class="box two">
+                <img src="/static/img/opengym.jpg" alt="">
+                <h3>Yoga & GYM Therepy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi?</p>
+                <!-- <a href="#" class="btn">read more</a> -->
+            </div>
+
+            <div class="box two">
+                <img src="/static/img/about11.jpg" alt="">
+                <h3>Cognitive Behavioral Therapy</h3>
+                <p>Cognitive behavioral therapy is a psycho-social intervention that aims to reduce...</p>
+                <!-- <a href="#" class="btn">read more</a> -->
+            </div>
+
+            <div class="box two">
+                <img src="/static/img/about12.jpg" alt="">
+                <h3>Art Therapy</h3>
+                <p>Art therapy is a distinct discipline that incorporates creative methods of expression...</p>
+                <!-- <a href="#" class="btn">read more</a> -->
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    {% include "footer.html" %}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0px;
+}
+
+
+.sec3{
+    width: 100%;
+    background-color: #f3f5f6;
+    margin-top: 100px;
+}
+
+.img img{
+    height: 50%;
+    width: 80%;
+}
+.img h4{
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
